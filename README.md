@@ -43,7 +43,9 @@ jupyter notebook
 ```
 Then, open the `stress_prediction.ipynb` file.
 
-***Dataset*** - The dataset is embedded directly from Roboflow into the project sing the dataset preprocessing project API key. The same dataset is attached in a compressed folder in this repository.
+***Dataset*** - The preprocessed dataset is embedded directly from Roboflow onto the project using the API key. 
+The same dataset is made available publicly on Kaggle.
+https://www.kaggle.com/datasets/hibamoideen/camel-stress-detection-using-cv
 
 
 
