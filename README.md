@@ -57,6 +57,7 @@ print(torch.cuda.get_device_name(0))  # 0 corresponds to the first GPU
 Once dependencies are installed, launch Jupyter Notebook:
 
 ```
+conda install jupyter   
 jupyter notebook
 ```
 Then, open the `stress_prediction.ipynb` file.
