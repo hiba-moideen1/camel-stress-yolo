@@ -29,11 +29,29 @@ conda activate stress_prediction
 ```
 
 ## 3. Install Dependencies
-Your Jupyter Notebook requires certain libraries. Install them using:
+Check CUDA version:
 
 ```
-pip install numpy pandas matplotlib seaborn scikit-learn tensorflow keras jupyter
+nvcc --version
 ```
+
+Install CUDA Toolkit:
+```
+conda install -c anaconda cudatoolkit
+```
+
+Install PyTorch:
+```
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+```
+
+Verify GPU Support:
+```
+import torch
+print(torch.cuda.is_available())
+print(torch.cuda.get_device_name(0))  # 0 corresponds to the first GPU
+```
+
 
 ## 4. Run Jupyter Notebook
 Once dependencies are installed, launch Jupyter Notebook:
