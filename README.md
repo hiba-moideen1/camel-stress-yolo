@@ -1,2 +1,50 @@
-# camel-stress-yolo
+# Detecting Stress Parameters in Dromedary Camels Using Computer Vision
 Official Implementation of the "Detecting Stress Parameters in Dromedary Camels Using Computer Vision" Paper.
+**Project Description:**  
+This study focuses on stress detection in dromedary camels using deep learning. Camels at the Marmoom Farm were monitored for six days under different conditions, including blood sample collection and intense training. Video footage was analyzed to build a YOLOv8-based model that detects both normal (e.g., standing, sitting, sleeping) and stress-related behaviors (e.g., distressed sitting, uncontrollable movement, rope pulling). The model achieved high accuracy, with a precision of 0.971 and recall of 0.959. By examining behavioral responses to stressors, the study provides valuable insights into camel welfare, enabling early intervention and improved management practices.
+
+## 1. Clone the Repository
+First, download the project files from GitHub
+
+```
+git clone https://github.com/hiba-moideen1/camel-stress-yolo.git
+cd your-repo
+```
+
+## 2. Set Up a Virtual Environment
+Create and activate a virtual environment to manage dependencies.
+
+***For Python Virtual Environment (`venv`)***
+
+```
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+***For Conda Environment***
+
+```
+conda create --name stress_prediction python=3.8 -y
+conda activate stress_prediction
+```
+
+## 3. Install Dependencies
+Your Jupyter Notebook requires certain libraries. Install them using:
+
+```
+pip install numpy pandas matplotlib seaborn scikit-learn tensorflow keras jupyter
+```
+
+## 4. Run Jupyter Notebook
+Once dependencies are installed, launch Jupyter Notebook:
+
+```
+jupyter notebook
+```
+Then, open the `stress_prediction.ipynb` file.
+
+***Dataset*** - The dataset is embedded directly from Roboflow into the project sing the dataset preprocessing project API key. The same dataset is attached in a compressed folder in this repository.
+
+
+
+
